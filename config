@@ -1,0 +1,12 @@
+# hetzner1 (h1).
+Host hetzner1
+User allan
+HostName 138.201.30.163
+Port 2222
+IdentityFile ~/.ssh/id_hetzner
+
+Host web-dev-h1
+HostName 10.10.1.199
+User ansible
+ProxyJump hetzner1
+#IdentityFile ~/.ssh/id_ed25519_ansible
